@@ -50,7 +50,9 @@ assets:
 sorebear_module.settings:
   title: Sore Bear Module Settings
   description: Change the settings to the module.
+  # Places link under 'Configuration > User Interface'
   parent: system.admin_config_ui
+    # For 'Configuration > Development' use: system.admin_config_development
   route_name: sorebear_module.settings
 ```
 
@@ -63,9 +65,13 @@ administer sorebear module:
 ```
 
 #### sorebear_module.settings
+This code in the 'parent: ' line places the link under 'Config > User Interace'.
+To place the link under 'Config > Development', use: `parent: system.admin_config_development`
 ```yml
 sorebear_module.settings:
+  # Places link under 'Configuration > User Interface'
   path: '/admin/config/user-interface/sorebear-module'
+    # For 'Configuration > Development' use: 'admin/config/development/sorebear-module'
   defaults:
     _title: 'Sore Bear Module Settings'
     _form: '\Drupal\sorebear_module\Form\SoreBearModuleSettingsForm'
