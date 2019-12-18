@@ -2,6 +2,8 @@
 
 For all of these examples, we will assume the module we are creating is named 'sorebear_module'.
 
+___
+
 ## Module with Settings Form, CSS, and JavaScript
 
 ### File Structure
