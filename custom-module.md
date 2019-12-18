@@ -65,8 +65,6 @@ administer sorebear module:
 ```
 
 #### sorebear_module.settings
-This code in the 'parent: ' line places the link under 'Config > User Interace'.
-To place the link under 'Config > Development', use: `parent: system.admin_config_development`
 ```yml
 sorebear_module.settings:
   # Places link under 'Configuration > User Interface'
