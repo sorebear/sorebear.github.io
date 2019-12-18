@@ -24,7 +24,7 @@ function THEME_theme_suggestions_block_alter(&$suggestions, &$vars) {
 
 # Theme Settings
 
-### Add Settings From to Theme
+### Add Settings Form to Theme
 
 ```php
 use Drupal\Core\Form\FormStateInterface;
@@ -70,3 +70,11 @@ function THEME_form_system_theme_settings_alter(&$form, FormStateInterface &$for
     ]
   );
 }
+```
+
+### Access that Theme setting in any preprocess
+```php
+function THEME_preprocess_HOOK(&$vars) {
+  $var = theme_get_setting('field_3');
+}
+```
